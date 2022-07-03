@@ -1,0 +1,20 @@
+[
+  {
+    "id": 3843,
+    "icon": "/images/ph_swap-thin.svg",
+    "title": "Convert",
+    "describe": "Convert your native and vote-escrowed NFTs into Wrap wveTokens."
+  },
+  {
+    "id": 6543,
+    "icon": "/images/ion_pie-chart-outline.svg",
+    "title": "Earn",
+    "describe": "Stake your wveTokens and leverage boosted farms to maximize revenues."
+  },
+  {
+    "id": 9676,
+    "icon": "/images/material-symbols_candlestick-chart-outline-rounded.svg",
+    "title": "Trade",
+    "describe": "Exit your position at any time with Wrap's peg maintenance module."
+  }
+]

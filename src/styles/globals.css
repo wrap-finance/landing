@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'ClarikaPro';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('ClarikaPro'), local('ClarikaPro'),
+    url(../fonts/Clarika-Pro/Fontspring-DEMO-clarikaprogeo-rg.otf) format('woff2');
+}
+
+@font-face {
+  font-family: 'rationell';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: local('rationell'), local('rationell'),
+  url(../fonts/rationell/Rationell-ExtraLight.otf) format('woff2');
+}
+
+@font-face {
+  font-family: 'rationell';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local('rationell'), local('rationell'),
+  url(../fonts/rationell/Rationell-Light.otf) format('woff2');
+}
+
+@font-face {
+  font-family: 'rationell';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('rationell'), local('rationell'),
+  url(../fonts/rationell/Rationell-Regular.otf) format('woff2');
+}
+
+@font-face {
+  font-family: 'rationell';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local('rationell'), local('rationell'),
+  url(../fonts/rationell/Rationell-Medium.otf) format('woff2');
+}
+
+@font-face {
+  font-family: 'rationell';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local('rationell'), local('rationell'),
+  url(../fonts/rationell/Rationell-Bold.otf) format('woff2');
+}
+
+@font-face {
+  font-family: 'rationell';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local('rationell'), local('rationell'),
+  url(../fonts/rationell/Rationell-ExtraBold.otf) format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply m-0 p-0 text-base text-white font-primary;
+}
+
+a {
+  @apply text-inherit no-underline hover:underline;
+}
+
+* {
+  @apply box-border;
+}
+
+.m-cards-1 {
+  position: relative;
+}
+
+.m-cards-1::after {
+  @apply md:left-0 bg-horizontal-line md:bg-vertical-line -top-5 md:top-0 md:top-auto w-full md:w-0.5 h-0.5 md:h-full block absolute;
+  content: '';
+}
+
+.borderEffect {
+  position: relative;
+  border-radius: 15px;
+}
+
+.borderEffect::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background-image: linear-gradient(180deg, #fefdeb 0%, rgba(254, 253, 235, 0) 100%);
+  border: 4px solid;
+  border-radius: 16px;
+  z-index: -1;
+
+  background-origin: border-box;
+  background-clip: border-box;
+  -webkit-mask: linear-gradient(180deg, white 0%, white 100%) padding-box, linear-gradient(180deg, white 0%, transparent 100%);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}

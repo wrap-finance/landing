@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Discord",
+    "navbar": false,
+    "url": "https://discord.gg/7DbFhbYU"
+  },
+  {
+    "name": "Documentation",
+    "navbar": true,
+    "url": "/#"
+  },
+  {
+    "name": "Blog",
+    "navbar": true,
+    "url": "/#"
+  },
+  {
+    "name": "Links",
+    "navbar": true,
+    "url": "/#"
+  },
+  {
+    "name": "Twitter",
+    "navbar": false,
+    "url": "/#"
+  }
+]

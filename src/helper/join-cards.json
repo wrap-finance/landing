@@ -1,0 +1,20 @@
+[
+  {
+    "id": 349,
+    "icon": "/images/staking-rewards (1).svg",
+    "title": "Staking Rewards",
+    "describe": "Stake wveTokens on Wrap to earn the underlying protocol rewards."
+  },
+  {
+    "id": 657,
+    "icon": "/images/boosted-farms.svg",
+    "title": "Boosted Farms",
+    "describe": "Leverage staked wveTokens to maximize revenues via boosted farms."
+  },
+  {
+    "id": 4564,
+    "icon": "/images/bribes-revenue.svg",
+    "title": "Bribes Revenue",
+    "describe": "Earn more through bribes market integration and auto-compounding capabilities."
+  }
+]

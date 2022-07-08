@@ -12,8 +12,8 @@ function JoinAdvice() {
           {joinCards.map(({ id, icon, title, describe }, i) => (
             <div key={id} className={`flex justify-center ${i % 2 !== 0 ? 'translate-y-1/2' : ''}`}>
               <div className="flex flex-col gap-5 text-center items-center w-full max-w-[290px]">
-                <img className="w-20 md:w-[120px]" src={icon} alt="" />
-                <strong className="text-skyblue font-bold text-2xl">{title}</strong>
+                <img className="w-14 md:w-[120px]" src={icon} alt="" />
+                <strong className="text-skyblue font-bold text-lg md:text-2xl">{title}</strong>
                 <p className="text-white hidden md:block font-extraLight text-xl">{describe}</p>
               </div>
             </div>

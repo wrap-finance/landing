@@ -12,7 +12,8 @@ function Hero() {
               A universal liquid<br />layer for veTokens
             </h4>
             <div className="hidden md:flex md:flex-row flex-col gap-7.5">
-              <Button url="#" text="USE THE APP" />
+              {/* <Button url="#" text="USE THE APP" /> */}
+              <Button url="#" text="COMING SOON" disabled />
               <Button url={navlinks[1].url} outline text="View Documentation" />
             </div>
           </div>
@@ -25,7 +26,8 @@ function Hero() {
           />
         </div>
         <div className="flex md:hidden md:flex-row flex-col mt-10 gap-7.5">
-          <Button url="#" text="USE THE APP" />
+          {/* <Button url="#" text="USE THE APP" /> */}
+          <Button url="#" text="COMING SOON" disabled />
           <Button url={navlinks[1].url} outline text="View Documentation" />
         </div>
       </div>

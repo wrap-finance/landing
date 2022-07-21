@@ -12,7 +12,7 @@ function MultiItemCard() {
             </h5>
             <p className="font-extraLight text-white text-xl">
               Wrap is the leading liquid layer for veTokens in the StarkNet ecosystem. Earn more while keeping a liquid
-              portfolio
+              portfolio.
             </p>
           </div>
           <div className="flex md:flex-row flex-col gap-10 mt-10 md:mt-0 md:gap-0">

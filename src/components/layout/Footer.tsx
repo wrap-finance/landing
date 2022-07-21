@@ -21,7 +21,7 @@ function Footer() {
             <div className="flex flex-col gap-4">
               <a href={navlinks[1].url} target="_blank" rel="noreferrer noopener">Documentation</a>
               <a href={navlinks[2].url} target="_blank" rel="noreferrer noopener">Blog</a>
-              <a href={navlinks[3].url} target="_blank" rel="noreferrer noopener">Links</a>
+              {/*<a href={navlinks[3].url} target="_blank" rel="noreferrer noopener">Links</a>*/}
             </div>
             <div className="flex flex-col gap-4">
               <a href={navlinks[0].url} target="_blank" rel="noreferrer noopener">Discord</a>

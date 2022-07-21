@@ -2,7 +2,7 @@
   {
     "name": "Discord",
     "navbar": false,
-    "url": "https://discord.gg/7DbFhbYU"
+    "url": "https://discord.gg/e9Uvyz5d9Q"
   },
   {
     "name": "Documentation",
@@ -15,6 +15,7 @@
     "url": "/#"
   },
   {
+    "hidden": true,
     "name": "Links",
     "navbar": true,
     "url": "/#"

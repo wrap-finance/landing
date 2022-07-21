@@ -3,6 +3,10 @@ module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      boxShadow: {
+        button: 'inset 0 0 0 4px #BEE8FF, 0 0 40px rgba(182, 228, 255, 0.5)',
+        buttonActive: 'inset 0 0 0 1px #BEE8FF, 0 0 40px rgba(182, 228, 255, 0.5)',
+      },
       spacing: {
         1.25: '0.3125rem',
         3.75: '0.9375rem',
@@ -47,8 +51,10 @@ module.exports = {
       dodgerBlue: '#1DA1F2',
       navy: '#101F86',
       lateBlue: '#5865F2',
+      darkblue: '#001F40',
       warm: '#FEFDEB',
       skyblue: '#B7D7E0',
+      lightblue: '#0092E1',
       transparent: 'transparent',
     },
     fontSize: {

@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface Props {
+  disabled?: boolean;
   url?: string;
   text?: string;
   icon?: string;
@@ -8,10 +9,13 @@ interface Props {
   outline?: boolean;
 }
 
-function Button({ url, text, icon, size, outline }: Props) {
-  let outlineStyle = 'text-navy bg-white hover:bg-opacity-90';
-  if (outline) {
-    outlineStyle = 'text-white bg-transparent hover:bg-white hover:bg-opacity-10';
+function Button({ url, text, icon, size, outline, disabled }: Props) {
+  let outlineStyle = outline ? 'text-white bg-transparent' : 'text-navy bg-white';
+  if (!disabled) {
+    outlineStyle += ' hover:shadow-button active:shadow-buttonActive';
+    outlineStyle += outline
+      ? ' hover:bg-white hover:bg-opacity-10'
+      : ' hover:bg-darkblue hover:bg-opacity-90 hover:shadow-button hover:text-lightblue';
   }
 
   let sizeStyle = 'px-6 py-4 font-bold text-xl';
@@ -19,7 +23,9 @@ function Button({ url, text, icon, size, outline }: Props) {
     sizeStyle = 'px-4 py-2.5 font-bold text-sm';
   }
 
-  const styled = `flex gap-3.5 items-center justify-center border-white border hover:no-underline rounded-lg cursor-pointer ${sizeStyle} ${outlineStyle} ring-0 focus:ring-4 ring-white ring-opacity-30 duration-75`;
+  let styled =
+    `flex gap-3.5 items-center justify-center border-white border hover:no-underline rounded-lg ${sizeStyle} ${outlineStyle} ring-0 focus:ring-4 ring-white ring-opacity-30`;
+  styled += disabled ? ' cursor-auto' : ' cursor-pointer';
 
   const renderChild = (
     <>
@@ -34,7 +40,7 @@ function Button({ url, text, icon, size, outline }: Props) {
     </a>
   ) : (
     <div className="flex flex-col gap-5">
-      <button type="button" className={`${styled}`}>
+      <button disabled={disabled} type="button" className={`${styled}`}>
         {renderChild}
       </button>
     </div>

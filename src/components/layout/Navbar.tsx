@@ -13,7 +13,7 @@ function Navbar({ toggleMenu }: Props) {
     <nav className="py-5 px-7.5 flex justify-between items-center max-w-container mx-auto">
       <Logo />
       <ul className="list-none hidden md:flex gap-10.5">
-        {navlinks.filter(({ navbar }) => navbar).map(({ name, url }, index) => (
+        {navlinks.filter(({ hidden, navbar }) => navbar && !hidden).map(({ name, url }, index) => (
           <li key={index}>
             <Link href={url}>
               <a className="text-white font-extraLight text-lg">{name}</a>
@@ -22,7 +22,8 @@ function Navbar({ toggleMenu }: Props) {
         ))}
       </ul>
       <div className="font-thin">
-        <Button size="small" outline text="USE APP" url="#" icon="/images/Vector.svg" />
+        <Button disabled size="small" outline text="COMING SOON" url="#" />
+        {/* <Button size="small" outline text="USE APP" url="#" icon="/images/Vector.svg" /> */}
       </div>
       <div className="block md:hidden">
         <button

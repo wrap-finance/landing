@@ -9,7 +9,7 @@ import MultiItemCard from '../src/views/home/MultiItemCard';
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-dark overflow-hidden">
+    <div className="bg-main overflow-hidden">
       <div className="bg-header-image p-5 md:p-10 pb-72 md:pb-56 bg-cover bg-no-repeat bg-top">
         <Header />
         <Hero />

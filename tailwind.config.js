@@ -23,6 +23,7 @@ module.exports = {
       },
     },
     backgroundImage: {
+      'main': 'linear-gradient(rgb(7 7 75), rgb(10, 16, 32) 60%)',
       'join-community':
         'linear-gradient(180deg, rgba(10, 16, 32, 0) 0%, rgba(19, 57, 88, 0.2) 100%)',
       'header-image': 'url("/images/Group 13 (2).svg")',
@@ -34,10 +35,8 @@ module.exports = {
         'rgba(0, 0 ,0, 0), linear-gradient(180deg, rgba(10, 16, 32, 0.8) 0%, rgba(19, 57, 88, 0.2) 100%)',
       'join-circle': 'url("/images/Group 14.png")',
       'join-box': 'linear-gradient(#0A1020 0, transparent 160px), url("/images/sadfsd.svg")',
-      'vertical-line':
-        'linear-gradient(180deg, #0a1020 0%, rgba(19, 57, 88, 0.2) 100%), linear-gradient(180deg, #fefdeb 0%, #0a1020 100%)',
-      'horizontal-line':
-        'linear-gradient(90deg, #0a1020 0%, rgba(19, 57, 88, 0.2) 100%), linear-gradient(90deg, #fefdeb 0%, #0a1020 100%)',
+      'vertical-line': 'linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0))',
+      'horizontal-line': 'linear-gradient(to right, rgba(255, 255, 255, 0%), rgba(255, 255, 255, 50%), rgba(255, 255, 255, 0%))',
     },
     boxShadow: {
       timeline: '0px 0px 40px 0px #FEFDEB33',

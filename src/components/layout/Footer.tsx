@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import navlinks from '../../helper/navlinks.json';
+import Image from 'next/image'
 
 function Footer() {
   return (
@@ -9,8 +10,8 @@ function Footer() {
         <div className="flex md:flex-row flex-col md:gap-0 gap-12.5 justify-between mx-auto max-w-screen-2xl">
           <div className="flex flex-col gap-12.5 flex-grow">
             <Link href="/">
-              <a className="">
-                <img className="w-20 mx-auto md:mx-0" src="/images/wrap.svg" alt="" />
+              <a className="flex justify-center md:block">
+                <Image className="mx-auto md:mx-0" src="/images/wrap-nav-logo.svg" alt="" height={38} width={100} />
               </a>
             </Link>
             <p className="font-regular text-center md:text-left text-opacity-50 text-sm text-white">
